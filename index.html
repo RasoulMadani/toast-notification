@@ -1,0 +1,91 @@
+<!--
+/* ﷲ  ﷽  ﷲ  ﷽   ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ  ﷽  ﷲ.. 
+|:          **** بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ ****           :|
+|:     ⚡☝..✍-☝..✍-☝..✍-☝..✍-☝..✍-☝..✍⚡   :|
+|:               ⌚ in the name of allah ⌛              :|
+﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽*/
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="" />
+        <title>allah</title>
+        <style>
+            *{
+                margin: 0;padding: 0;box-sizing: border-box;
+            }
+            body{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            p{
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                width: 60%;
+                margin: 200px auto;
+            }
+            #list{
+                position: fixed;
+                bottom: 0;right: 0;
+                padding: 20px;
+                width: 300px;
+                background-color: black;
+            }
+            .li{
+                background-color: white;
+                display: flex;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                justify-content: center;
+                align-items: center;
+                text-transform: capitalize;
+                list-style-type: none;
+                margin: 10px 0;
+                padding: 10px;
+                transition: 1s linear;
+            }
+            .remove{
+                transform: translateX(600px);
+            }
+        </style>
+    </head>
+    <body>
+        <button id="toast">click me</button>
+        <ul id="list"> </ul>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit quibusdam aspernatur totam saepe ratione rem quod, qui quae. Enim omnis quasi magni expedita animi? Velit omnis eius commodi dolorum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit quibusdam aspernatur totam saepe ratione rem quod, qui quae. Enim omnis quasi magni expedita animi? Velit omnis eius commodi dolorum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit quibusdam aspernatur totam saepe ratione rem quod, qui quae. Enim omnis quasi magni expedita animi? Velit omnis eius commodi dolorum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit quibusdam aspernatur totam saepe ratione rem quod, qui quae. Enim omnis quasi magni expedita animi? Velit omnis eius commodi dolorum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit quibusdam aspernatur totam saepe ratione rem quod, qui quae. Enim omnis quasi magni expedita animi? Velit omnis eius commodi dolorum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit quibusdam aspernatur totam saepe ratione rem quod, qui quae. Enim omnis quasi magni expedita animi? Velit omnis eius commodi dolorum.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam suscipit quibusdam aspernatur totam saepe ratione rem quod, qui quae. Enim omnis quasi magni expedita animi? Velit omnis eius commodi dolorum.
+        </p>
+        <script>
+            document.getElementById('toast').addEventListener("click",()=>{
+                const _li = document.createElement('li');
+                _li.classList.add('li');
+                _li.innerHTML = 'sample warning..!';
+                document.getElementById('list').appendChild(_li);
+                setTimeout(()=>{
+                    _li.classList.add('remove');
+                    setTimeout(()=>{
+                        _li.remove();
+                    },1000) 
+                },2000)
+            })
+        </script>
+    </body>
+</html>
